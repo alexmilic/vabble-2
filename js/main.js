@@ -65,7 +65,6 @@ $(document).ready(function () {
     /* search input*/
     $('.search-nav-btn').on('click', function () {
         if ($(window).width() < 992) {
-            console.log('2', $(window).width());
             $('.header-search').toggleClass('slideSearch-top');
         }
     });
