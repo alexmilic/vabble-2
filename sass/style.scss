@@ -840,16 +840,21 @@ footer {
             text-align: center;
         }
     }
-    .footer-logo {
-        padding: 20px 0;
-        &::after {
-            content: "";
-            background: red;
-            height: 20px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 20px;
+    .footer-left {
+        @media (min-width:991px) {
+            text-align: left;
+        }
+        .footer-logo {
+            padding: 20px 0;
+            &::after {
+                content: "";
+                background: red;
+                height: 20px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 20px;
+            }
         }
     }
     p {

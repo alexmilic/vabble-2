@@ -51,7 +51,7 @@ $(document).ready(function () {
             $($target).css('color', '#8d8d8d');
             $($target).css('font-weight', 'normal');
         }
-        
+
         $currentLikeValue = $newValue;
         // console.log($currentLikeValue);
         $span.text($currentLikeValue);
@@ -160,6 +160,7 @@ $(document).ready(function () {
 
         if ($contentPostValue.length > 163) {
             $dom = newPostDomWithShowMoreBtn($titlePostValue, $contentPostValue);
+            
             $test = $('.main-post').last();
         } else {
             $dom = newPostDom($titlePostValue, $contentPostValue);

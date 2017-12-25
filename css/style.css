@@ -714,9 +714,12 @@ footer {
   @media (min-width: 768px) and (max-width: 991px) {
     footer .center {
       text-align: center; } }
-  footer .footer-logo {
+  @media (min-width: 991px) {
+    footer .footer-left {
+      text-align: left; } }
+  footer .footer-left .footer-logo {
     padding: 20px 0; }
-    footer .footer-logo::after {
+    footer .footer-left .footer-logo::after {
       content: "";
       background: red;
       height: 20px;
