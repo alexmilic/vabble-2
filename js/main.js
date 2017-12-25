@@ -51,7 +51,7 @@ $(document).ready(function () {
             $($target).css('color', '#8d8d8d');
             $($target).css('font-weight', 'normal');
         }
-
+        
         $currentLikeValue = $newValue;
         // console.log($currentLikeValue);
         $span.text($currentLikeValue);
