@@ -1,3 +1,10 @@
+// check window width
+$(window).resize(function () {
+    if ($(window).width() > 992) {
+        $('.header-search').removeClass("slideSearch-top");
+    }
+});
+
 $(document).ready(function () {
     /*OWL Caraousel Settings*/
     $(".items-slide").owlCarousel({
@@ -57,7 +64,10 @@ $(document).ready(function () {
 
     /* search input*/
     $('.search-nav-btn').on('click', function () {
-        $('.header-search').toggleClass('slideSearch-top');
+        if ($(window).width() < 992) {
+            console.log('2', $(window).width());
+            $('.header-search').toggleClass('slideSearch-top');
+        }
     });
 
     /* share links */
