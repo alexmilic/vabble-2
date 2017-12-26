@@ -157,18 +157,17 @@ $(document).ready(function () {
         $contentPost = $('.comment-text');
         $contentPostValue = $contentPost.val();
         $formContainer = $('.add-post-container');
+        $test = $('.add-post');
 
         if ($contentPostValue.length > 163) {
             $dom = newPostDomWithShowMoreBtn($titlePostValue, $contentPostValue);
             
-            $test = $('.main-post').last();
         } else {
             $dom = newPostDom($titlePostValue, $contentPostValue);
-            $test = $('.main-post').last();
         }
 
         if ($titlePostValue != 0 && $contentPostValue != 0) {
-            $test.after($dom);
+            $test.before($dom);
             $addpostconrainer = $('.add-post-container').css('display', 'none');
 
             $titlePost.val('');
