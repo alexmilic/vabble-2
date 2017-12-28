@@ -740,6 +740,9 @@ footer {
     @media (min-width: 320px) and (max-width: 479px) {
       footer ul {
         margin-bottom: 70px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer ul {
+        margin-bottom: 30px; } }
     footer ul li {
       display: inline-block; }
       @media (min-width: 320px) and (max-width: 479px) {

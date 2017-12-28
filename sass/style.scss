@@ -841,7 +841,7 @@ footer {
         }
     }
     .footer-left {
-        @media (min-width:991px) {
+        @media (min-width: 991px) {
             text-align: left;
         }
         .footer-logo {
@@ -870,6 +870,9 @@ footer {
         padding: 0 15px;
         @media (min-width: 320px)and (max-width:479px) {
             margin-bottom: 70px;
+        }
+        @media (min-width: 768px) and (max-width:991px) {
+            margin-bottom: 30px;
         }
         li {
             display: inline-block;
